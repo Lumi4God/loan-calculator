@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111827;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/***************Header*****************/
+.headed {
+    background-color: #000;
+    display: block;
+    height: 80px;
+    width: 100%;
+}
+
+.headed .flex {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.headed .flex img {
+    width: 80px;
+}
+
+.headed .flex h1 {
+    font-size: 50px;
+    background-color: rgb(0, 9, 9);
+    text-align: center;
+}
+
+.headed .span {
+    background-color: #fff;
+    text-align: center;
+    width: 100%;
+}
+
+.headed .span span {
+    color: #000;
+    font-weight: bold;
+    margin-left: 70px;
+}
+
+/************Loan Calculator************/
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid deepskyblue;
+    padding: 48px;
+    border-radius: 20px;
+    width: 30rem;
+
+    margin-top: 10%;
+}
+
+.form-input {
+    border: 2px solid deepskyblue;
+    width: 14rem;
+    height: 2rem;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.input {
+    height: 100%;
+    width: 80%;
+    border: none;
+    outline: none;
+    /* padding: 0 10px; */
+}
+
+.input-icon {
+    width: 15%;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+.divBtn {
+    display: flex;
+    justify-content: space-around;
+  width: 100%;
+}
+
+.refreshBtn {
+    border: 2px solid rgb(251, 249, 249);
+    background: rgb(255, 51, 0);
+    color: #000;
+}
+
+.calculateBtn {
+    border: 2px solid rgb(247, 248, 249);
+    background: deepskyblue;
+    color: #fff;
+}
+
+.calculateBtn, .refreshBtn {
+    height: 3rem;
+    width: 6rem;
+    font-size: 16px;
+    border-radius: 7px;
+    padding: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+}

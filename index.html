@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <!--Css-->
+    <link rel="stylesheet" href="style.css">
+    <!--AwesomeFonts-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <!--GoogleFonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="headed">
+        <div class="flex">
+            <a href="index.html">
+                <img src="img/logo.jpeg" alt="logo">
+            </a>
+            <h1>Lumi  Bank</h1>
+            <div class="float">
+
+            </div>
+        </div>
+
+        <div class="span">
+            <span>your financial best friend</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Loan Calculator</h1>
+        <span></span>
+
+        <div class="form-input">
+            <button class="input-icon">
+                <i class="fas fa-dollar-sign"></i>
+            </button>
+            <input type="number" class="input" id="amount" placeholder="Loan Amount">
+        </div>
+
+        <div class="form-input">
+            <button class="input-icon">
+                <i class="fas fa-percentage"></i>
+            </button>
+            <input type="number" class="input" id="interest" placeholder="Interest">
+        </div>
+
+        <div class="form-input">
+            <button class="input-icon">
+                <i class="fas fa-calendar"></i>
+            </button>
+            <input type="number" class="input" id="months" placeholder="Months to repay">
+        </div>
+
+        <div class="divBtn">
+            <button class="calculateBtn" onclick="calculateLoan()">Calculate</button>
+            <button class="refreshBtn" onclick="location.reload();">Refresh</button>
+        </div>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>    
